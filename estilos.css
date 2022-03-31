@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -9,43 +8,65 @@ body{
     color: aliceblue;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
+header{
+    height: 100px;
     margin: auto;
-    background-color: rgb(24, 24, 24);
-    overflow: hidden;
-    align-items: center;
-    justify-items: center;
-    z-index: 1;
-}
-
-.header-content {
-    max-width: 1200px;
-    height: 80px;
-    margin: auto;
+    background: rgba(174, 54, 243, 0.693);
+    padding: 0 30px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    float: left;
-    height: 100px;
+.header-content{
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
-.img-logo {
+.img-logo{
     width: 100px;
 }
-	
+
+.menu {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+    color: #fff;
+}
+
+.mostrar-menu{
+    order:1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    background: black;
+}
+
+#check{
+    display: none;
+}
 
 
+/*PORTADA*/
 .container-cover {
     width: 100%;
-    height: 400px;
+    height: 200px;
     position: relative;
+    margin-top: 80px;
     margin-bottom: 50px;
     background-image: url(fotos/portada.png);
     background-position: center;
@@ -55,22 +76,24 @@ header {
 
 .container-info-cover {
     margin: auto;
-    padding: 100px;
-    height: 400px;
+    height: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:aliceblue;
-
+    color: aliceblue;
 }
 
-.container-info-cover img{
-    position: relative;
-    display: flex;
+.container-info-cover h3{
+    font-size: 20px;
+    margin-top: 40px;
+    color: rgb(235, 235, 235);
 }
 
-.boton-portada {
-    width: 300px;
+.boton-portada{
+    width: 170px;
 }
+
+
+
