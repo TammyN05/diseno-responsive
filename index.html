@@ -5,150 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Space Games</title>
-    <link rel="shortcut icon" href="fotos/icono2.png">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!--HEADER Y MENU-->
-    <!--<header class="Tituloosm">       
-        <div class="barra">
-            <h2>Menu<img src="fotos/lista_icono.png" alt=""></h2>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Juegos</a></li>
-                <li id=ultimoelemento><a href="#">Ofertas</a></li>   
-            </ul>
-           
-        </div> 
-    </header>--!
+    <header>
+        <h2 class="logo">Space Games 🪐</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801</label>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Juegos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Redes sociales</a>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
 
-  
+     <!--PORTADA-->
+     <div class="container-cover">
+        <div class="container-info-cover">
+            <h3>Adquiere tu juego <br> al mejor precio del mercado</h3>
+            <a href="card"><img src="fotos/cta.png" alt="Comprar ahora" class="boton-portada"></a>
+        </div>
+    </div>    
 
-    <!--PORTADA-->
-        <div class="container-cover">
-            <div class="container-info-cover">
-                <h3>Adquiere tu juego <br> al mejor precio del mercado</h3>
-                <a href="card"><img src="fotos/cta.png" alt="Comprar ahora" class="boton-portada"></a>
-            </div>
-        </div>    
-
-  <!--JUEGOS-->
-
-  <main>
-      <section>
-        <div class="content-juegos">
-            <div class="img-content">
-                <img src="fotos/tomb-rider.jpg">
-            </div>
-            <div class="text-content">
-                <h1>Lorem ipsum dolor</h1>
-                <h2>$$$</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                <hr class="separador"> <br>
-            </div>
-        </section> 
-        <section>
-            <div class="content-juegos">
-                <div class="img-content">
-                    <img src="fotos/sherlock-holmes.jpg">
-                </div>
-                <div class="text-content">
-                    <h1>Lorem ipsum dolor</h1>
-                    <h2>$$$</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                    <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                    <hr class="separador"> <br>
-                </div>
-            </section>
-            <section>
-                <div class="content-juegos">
-                    <div class="img-content">
-                        <img src="fotos/far-cry6.jpg">
+    <!--JUEGOS-->
+    <div class="contenedor-general">
+        <section id="container-juegos">
+            <div class="conteiner">
+                <h2>Destacados</h2>
+                <div class="juegos-destacados">
+                    <div class="juego">
+                        <h3>Juego 1</h3>
+                        <h4>$precio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturib</p>
+                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora" class="boton-juegos"></a>
                     </div>
-                    <div class="text-content">
-                        <h1>Lorem ipsum dolor</h1>
-                        <h2>$$$</h2>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                        <hr class="separador"> <br>
+                    <div class="juego">
+                        <h3>Juego 2</h3>
+                        <h4>$precio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturib</p>
+                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora" class="boton-juegos"></a>
                     </div>
-                 </section>
-                <section>
-                    <div class="content-juegos">
-                        <div class="img-content">
-                            <img src="fotos/fornite.jpg">
-                        </div>
-                        <div class="text-content">
-                            <h1>Lorem ipsum dolor</h1>
-                            <h2>$$$</h2>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                            <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                            <hr class="separador"> <br>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="content-juegos">
-                            <div class="img-content">
-                                <img src="fotos/mortal-kombat.jpg">
-                            </div>
-                            <div class="text-content">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2>$$$</h2>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                                <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                                <hr class="separador"> <br>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="content-juegos">
-                                <div class="img-content">
-                                    <img src="fotos/battlefield.jpg">
-                                </div>
-                                <div class="text-content">
-                                    <h1>Lorem ipsum dolor</h1>
-                                    <h2>$$$</h2>
-                                    <hr>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate. Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-                                    <a href=""><img src="fotos/cta.png" alt="Comprar ahora"></a>
-                                    <hr class="separador"> <br>
-                                </div>
-                            </section>
-  </main>
-
-          
-       
-   <!--FOOTER-->
-   <footer>
-       <hr>
-       <div class="contacto">
-           <h3>Contactanos</h3>
-       </div>
-       <div class="info de contacto"> 
-            <ul>
-                <li>Retro Space Games</li>
-                <li>info@retrospacegames.com</li>
-                <li>0800-6666</li>
-            </ul>
-       </div>
+                    <div class="juego">
+                        <h3>Juego 3</h3>
+                        <h4>$precio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturib</p>
+                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora"class="boton-juegos"></a>
+                    </div>
+                    <div class="juego">
+                        <h3>Juego 4</h3>
+                        <h4>$precio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturib</p>
+                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora"class="boton-juegos"></a>
+                    </div>
+                    <div class="juego">
+                        <h3>Juego 5</h3>
+                        <h4>$precio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturib</p>
+                        <a href=""><img src="fotos/cta.png" alt="Comprar ahora"class="boton-juegos"></a>
+                    </div>
+                </div>
+        </div>
+        </section>
     </div>
-    <div class="iconos">
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-    </div>
-    <div class="footer">
-       <h3>Tamara Nuñez - Creado para Matea 2022.</h3> 
-    </div>
-</footer>
+   
 </body>
 </html>
