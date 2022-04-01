@@ -210,8 +210,27 @@ header{
     ,url(fotos/battlefield.jpg);
 }
 
+.footer{
+    height: 100px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
+.contacto h3 {
+    height: 100px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
+.contacto ul{
+    height: 100px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
 /*RESPONSIVE*/
 @media(max-width: 600px){
