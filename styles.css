@@ -25,7 +25,7 @@ header{
 
 .logo{
     text-transform:uppercase;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-weight: 300px;
 }
 
@@ -37,9 +37,9 @@ header{
     transition: 0.3s;
 }
 
-.mostrar-menu
+.mostrar-menu,
 .esconder-menu{
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     display: none;
     transition: 0.3s;
@@ -113,7 +113,6 @@ header{
 
 #container-juegos .container{
     padding: 150px 10px;
-    
 }
 
 
@@ -124,7 +123,7 @@ header{
 }
 
 #container-juegos p{
-    display: none;
+    display: block;
 }
 
 #container-juegos .juego{
@@ -147,11 +146,10 @@ header{
     font-weight: bold;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
 }
+
 .juego{
     transform: scale(1);
     transition: 0.5s;
-  
-    
 }
 
 .juego:hover{
@@ -235,11 +233,10 @@ header{
 /*RESPONSIVE*/
 @media(max-width: 600px){
     /*HEADER*/
-    .mostrar-menu
+    .mostrar-menu,
     .esconder-menu{
     display: block;
     }
-
     .menu{
         position: fixed;
         width: 100%;
@@ -261,16 +258,18 @@ header{
         top: 40px;
         right: 40px;
     }
-
     #check:checked ~ .menu{
         right: 0;
     }
-    
     .container-cover{
         width: 100%;
         height: 300px;
     }
     .container-info-cover{
         height: 300px;
+    }
+
+    #container-juegos p{
+        display: none;
     }
 }
