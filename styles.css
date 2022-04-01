@@ -25,7 +25,7 @@ header{
 
 .logo{
     text-transform:uppercase;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-weight: 300px;
 }
 
@@ -37,9 +37,9 @@ header{
     transition: 0.3s;
 }
 
-.mostrar-menu
+.mostrar-menu,
 .esconder-menu{
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     display: none;
     transition: 0.3s;
@@ -235,9 +235,10 @@ header{
 /*RESPONSIVE*/
 @media(max-width: 600px){
     /*HEADER*/
-    .mostrar-menu
+    .mostrar-menu,
     .esconder-menu{
     display: block;
+
     }
 
     .menu{
