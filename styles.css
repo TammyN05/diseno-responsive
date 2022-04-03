@@ -267,7 +267,7 @@ footer ul li{
 }
 
 /*RESPONSIVE*/
-@media(max-width: 600px){
+@media(max-width: 992px){
     /*HEADER*/
     .mostrar-menu,
     .esconder-menu{
