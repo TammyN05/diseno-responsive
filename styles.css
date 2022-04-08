@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
 /*AJUSTES GENERALES*/
 
 *{
@@ -9,6 +11,7 @@
 body{
     background-color: black;
     color: aliceblue;
+    font-family: 'Source Code Pro', monospace;
 }
 
 /*HEADER*/
@@ -58,6 +61,22 @@ header{
 #check{
     display:none;
 }
+
+.search{
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid purple;
+}
+
+.menu i{
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    color: black;
+}
+
+
 
 /*PORTADA*/
 .container-cover {
@@ -211,27 +230,47 @@ header{
 .footer{
     height: 100px;
     padding: 50px;
+    font-size: 15px;
+    text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.contacto {
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+
 }
 
 .contacto h3 {
     height: 100px;
     padding: 50px;
-    align-items: center;
-    justify-content: center;
+    font-size: 40px;
 }
 
-.contacto ul{
-    height: 100px;
-    padding: 50px;
+footer ul li{
+    line-height: 30px;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    text-align: center;
+}
+
+.iconos{
+    margin: auto;
+    text-align: center;
+    
+}
+
+.iconos i{
+    padding: 10px 15px;
+    justify-content: space-evenly;
+    font-size: 25px;
 }
 
 /*RESPONSIVE*/
-@media(max-width: 600px){
+@media(max-width: 992px){
     /*HEADER*/
     .mostrar-menu,
     .esconder-menu{
